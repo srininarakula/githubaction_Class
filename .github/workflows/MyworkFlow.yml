@@ -1,10 +1,10 @@
 name: 02-01-Simple Workflow
-#on: workflow_dispatch
+on: workflow_dispatch
 #jobs: 
 
-on: 
-  schedule:
-    - cron: '*/5 * * * *'
+#on: 
+ # schedule:
+  #  - cron: '*/5 * * * *'
 jobs: 
   my-first-job:
     runs-on: ubuntu-latest
@@ -14,3 +14,7 @@ jobs:
     runs-on: ubuntu-latest
     steps:
       - run: echo "Bye World"
+  my-fourth-job:
+    runs-on: self-hosted
+    steps:
+        - run: echo "Hello World"
