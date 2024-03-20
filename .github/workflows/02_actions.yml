@@ -13,8 +13,9 @@ jobs:
   my-second-job:
     runs-on: ubuntu-latest
     steps:
-      - run: echo "Bye World"
-  my-fourth-job:
-    runs-on: self-hosted
-    steps:
-        - run: echo "Hello World"
+      - uses: actions/checkout@v4
+         name:checkout code
+         
+      - uses: actions/setup-java@v4   
+         name:java
+  
