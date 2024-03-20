@@ -2,7 +2,8 @@ name: 02-01-Simple Workflow
 #on: workflow_dispatch
 #jobs: 
 
-on : schedule:
+on: 
+  schedule:
     - cron: '*/5 * * * *'
 jobs: 
   my-first-job:
